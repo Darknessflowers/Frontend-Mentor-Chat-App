@@ -243,7 +243,7 @@ h3 {
 	color: var(--lightViolet);
 }
 /* Load in animation */
-/* #chat div {
+#chat div {
 	transition-timing-function: step-end;
 }
 #chat div:nth-of-type(1) {
@@ -273,7 +273,7 @@ h3 {
 #chat div:nth-of-type(7) {
 	opacity: 0;
 	animation: loadMessage 2s 9s forwards;
-} */
+}
 @keyframes loadMessage {
 	0% {
 		opacity: 0;
