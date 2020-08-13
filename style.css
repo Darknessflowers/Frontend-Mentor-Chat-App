@@ -22,10 +22,38 @@ body {
 	--appBg: hsl(270, 20%, 96%);
 	--submitButtonBg: hsl(271, 36%, 24%);
 	--radioOutline: hsl(289, 100%, 72%);
-
+	overflow-x: hidden;
+}
+.leftBG {
+	width: 31.4vw;
+	height: 85vh;
+	background: linear-gradient(to bottom, #ce41ff, var(--lightViolet));
+	position: absolute;
+	z-index: -1;
+	pointer-events: none;
+	margin-left: -90px;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 255px 255px;
+	/* width: 452px; */
+}
+.rightBG {
+	background: linear-gradient(to bottom, #ce41ff, var(--lightViolet));
+	width: 31.4vw;
+	height: 85vh;
+	position: absolute;
+	z-index: -1;
+	opacity: 3%;
+	margin-right: -90px;
+	bottom: 0;
+	right: 0;
+	border-radius: 255px 255px 0 0;
 }
 h1 {
 	color: var(--h1);
+	margin: 0 0 24px 0;
+	font-weight: 500;
+	font-size: 40px;
 }
 h2 {
 	color: var(--white);
@@ -41,9 +69,12 @@ h3 {
 }
 #intro p {
 	color: var(--paragraph);
+	font-size: 16px;
+	line-height: 28px;
 }
 .container {
-	max-width: 815px;
+	width: 815px;
+	max-width: 90%;
 	margin: 0 auto;
 	min-height: 100vh;
 }
@@ -162,6 +193,8 @@ h3 {
 }
 .priceNum {
 	justify-self: end;
+	font-weight: 700;
+	font-size: 12px;
 }
 #chat .radioButton {
 	width: 12px;
@@ -183,6 +216,7 @@ h3 {
 	border-radius: 17px;
 	padding: 5px 5px 5px 19px;
 	color: var(--placeholderText);
+	font-size: 9px;
 }
 #chat .submitMessage {
 	background: var(--submitButtonBg);
@@ -196,12 +230,14 @@ h3 {
 	margin: 0;
 }
 .attribution {
+	margin-top: auto;
 	font-size: 11px;
 	text-align: center;
-	margin-top: auto;
+	padding: 0 10px 20px 10px;
+	color: var(--submitButtonBg);
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--lightViolet);
 }
 /* Load in animation */
 #chat div {
@@ -242,4 +278,51 @@ h3 {
 	100% {
 		opacity: 1;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+	#main {
+		display: grid;
+		grid-template-columns: 1fr;
+}
+#phone {
+	justify-self: center;
+}
+/* .leftBG {
+	width: calc(50vw + 90px);
+} */
+.leftBG {
+	width: 510px;
+	margin-left: -322px;
+	height: 500px;
+	position: fixed;
+}
+.rightBG {
+	background: linear-gradient(to bottom, #ce41ff, var(--lightViolet));
+	width: 50vw;
+	height: 44vh;
+	position: fixed;
+	z-index: -1;
+	opacity: 3%;
+	margin-right: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 500px 0 0 0;
+	display: ;
+}
+#main {
+	align-items: start;
+	padding-top: 64px;
+}
+#phone {
+	margin-bottom: 70px;
+}
+#intro {
+	max-width: 83%;
+	justify-self: center;
+	text-align: center;
+}
+#intro p {
+	margin-bottom: 60px;
+}
 }
