@@ -297,13 +297,13 @@ h3 {
 	width: 510px;
 	margin-left: -322px;
 	height: 500px;
-	position: fixed;
+	/* position: fixed; */
 }
 .rightBG {
 	background: linear-gradient(to bottom, #ce41ff, var(--lightViolet));
 	width: 50vw;
 	height: 44vh;
-	position: fixed;
+	/* position: fixed; */
 	z-index: -1;
 	opacity: 3%;
 	margin-right: 0;
