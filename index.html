@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Chat app CSS illustration</title>
@@ -29,42 +29,61 @@
     <div id="main">
       <div id="phone">
         <div id="header">
-          Samuel Green
-          Available to Walk
+          <img src="./images/backArrow.svg" alt="Back" class="back">
+          <div class="sam">
+            <img src="./images/avatar.jpg" alt="Sam" class="avatar">
+            <div class="samInfo">
+              <h2>Samuel Green</h3>
+                <h3>Available to Walk</h3>
+            </div>
+          </div>
+
+          <img src="./images/options.svg" alt="Options" class="options">
         </div>
         <div id="chat">
           <div class="left">
             <p>That sounds great. I’d be happy with that.</p>
           </div>
-          <div class="left">
+          <div class="left last">
             <p> Could you send over some pictures of your dog, please?
             </p>
           </div>
-          <div class="right">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <div class="imgs right">
+            <img src="./images/dog-image-1.jpg" alt="Dog 1">
+            <img src="./images/dog-image-2.jpg" alt="Dog 2">
+            <img src="./images/dog-image-3.jpg" alt="Dog 3">
           </div>
           <div class="right">
             <p>Here are a few pictures. She’s a happy girl!
             </p>
           </div>
-          <div class="right">
+          <div class="right last">
             <p>Can you make it?</p>
           </div>
           <div class="left">
             <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
           </div>
-          <div class="left">
-            30 minute walk
-            $29
+          <div class="left pricing">
+            <div class="price">
+              <div class="radioButton"></div>
+              <span class="desc">30 minute walk
+              </span>
+              <span class="priceNum">&#36;29</span>
+            </div>
+            <div class="price">
+              <div class="radioButton"></div>
+              <span class="desc"> 1 hour walk
+              </span>
+              <span class="priceNum">&#36;49</span>
+            </div>
 
-            1 hour walk
-            $49
+
+
 
           </div>
-          <input type="text" placeholder="Type a message…
-          ">
+          <div class="sendMessage">Type a message...
+            <div class="submitMessage"><img src="./images/submitArrow.svg" alt="Send message"></div>
+          </div>
         </div>
       </div>
       <div id="intro">
@@ -77,10 +96,11 @@
       </div>
     </div>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </div>
 
 

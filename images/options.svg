@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2" height="8" viewBox="0 0 2 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Combined_Shape" data-name="Combined Shape" class="cls-1" d="M0,7A1,1,0,1,1,1,8,1,1,0,0,1,0,7ZM0,4A1,1,0,1,1,1,5,1,1,0,0,1,0,4ZM0,1A1,1,0,1,1,1,2,1,1,0,0,1,0,1Z"/>
+</svg>
